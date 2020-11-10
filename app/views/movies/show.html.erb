@@ -2,7 +2,7 @@
 
 <p>
   <strong>Youtube Movie:</strong>
-  <iframe width="560" height="315" src="<%=  youtube_embed(@movie.path) %>" frameborder="0" allowfullscreen></iframe> 
+  <%= content_tag(:iframe,'', width: 500, height: 350, src: "#{youtube_embed(@movie.path)}") %>
 </p>
 
 <p>
