@@ -1,7 +1,6 @@
 module MoviesHelper
 	def user_email
-		user = User.find @movie.user_id
-		return user.email
+		return  @movie.user.email
 	end
 
 	def youtube_embed(youtube_url)
