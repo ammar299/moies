@@ -15,7 +15,7 @@
   <tbody>
     <% @movies.each do |movie| %>
       <tr>
-        <td><%= content_tag(:iframe,'', width: 500, height: 350, src: "#{youtube_embed(@movie.path)}") %> </td>
+        <td><%= content_tag(:iframe,'', width: 500, height: 350, src: "#{youtube_embed(movie.path)}") %> </td>
         <td><%= movie.description %></td>
         <td><%= movie.user.email %></td>
         <td><%= link_to 'Show', movie %></td>
