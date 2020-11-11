@@ -10,7 +10,7 @@ module MoviesHelper
 	    youtube_url[/^.*((v\/)|(embed\/)|(watch\?))\??v?=?([^\&\?]*).*/]
 	    youtube_id = $5
 	  end
-	  return "http://www.youtube.com/embed/#{ youtube_id }"
+	  return "https://www.youtube.com/embed/#{ youtube_id }"
 	end
 
 
